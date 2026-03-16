@@ -1,0 +1,7 @@
+const travelController = (req, res) => {
+    res.render('travel');
+};
+
+module.exports = {
+    travel: travelController
+};
