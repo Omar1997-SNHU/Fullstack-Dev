@@ -1,7 +1,11 @@
-const travelController = (req, res) => {
-    res.render('travel');
+var fs = require('fs');
+var path = require('path');
+
+const travel = (req, res) => {
+    var trips = JSON.parse(fs.readFileSync(path.join(__dirname, '../../data/trips.json'), 'utf8'));
+    res.render('travel', { trips });
 };
 
 module.exports = {
-    travel: travelController
+    travel
 };
