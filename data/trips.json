@@ -1,32 +1,62 @@
 [
-    {
-        "code": "GALR",
-        "name": "Gale Reef",
-        "length": "4 nights / 5 days",
-        "start": "2021-06-01T00:00:00Z",
-        "resort": "Gale Reef Resort",
-        "perPerson": "799.00",
-        "image": "reef1.jpg",
-        "description": "Gale Reef: Sed et augue lorem. In sit amet placerat arcu. Mauris volutpat ipsum ac justo mollis vel vestibulum orci gravida. Vestibulum sit amet porttitor odio. Nulla facilisi. Fusce at pretium felis. Sed consequat libero ut turpis venenatis ut aliquam risus semper."
-    },
-    {
-        "code": "DAWR",
-        "name": "Dawson's Reef",
-        "length": "5 nights / 6 days",
-        "start": "2021-07-01T00:00:00Z",
-        "resort": "Dawson's Reef Resort",
-        "perPerson": "999.00",
-        "image": "reef2.jpg",
-        "description": "Dawson's Reef: Integer magna leo, posuere et dignissim vitae, porttitor at odio. Pellentesque a metus nec magna placerat volutpat. Nunc nisi mi, elementum sit amet aliquet quis, tristique quis nisl. Curabitur odio lacus, blandit ut hendrerit vulputate, vulputate at est."
-    },
-    {
-        "code": "CLIR",
-        "name": "Claire's Reef",
-        "length": "6 nights / 7 days",
-        "start": "2021-08-01T00:00:00Z",
-        "resort": "Claire's Reef Resort",
-        "perPerson": "1199.00",
-        "image": "reef3.jpg",
-        "description": "Claire's Reef: Donec sed felis risus. Nulla facilisi. Donec a orci tellus, et auctor odio. Fusce ac orci nibh, quis semper arcu. Cras orci neque, euismod et accumsan ac, sagittis molestie lorem. Proin odio sapien, elementum at tempor non."
-    }
+  {
+    "code": "GALR210214",
+    "name": "Gale Reef",
+    "length": "4 nights / 5 days",
+    "start": "2021-02-14T00:00:00Z",
+    "resort": "Emerald Bay, Kauai, Hawaii",
+    "perPerson": "4999.00",
+    "image": "reef1.jpg",
+    "description": "Gale Reef – Come and dive in the crystal-clear waters of Kauai's famous Emerald Bay. This five-day adventure includes guided reef tours, snorkeling expeditions, and world-class underwater photography opportunities. Whether you are a seasoned diver or a first-timer, Gale Reef delivers an unforgettable Pacific experience."
+  },
+  {
+    "code": "DAWR210315",
+    "name": "Dawson's Creek",
+    "length": "4 nights / 5 days",
+    "start": "2021-03-15T00:00:00Z",
+    "resort": "Blue Lagoon, Juneau, Alaska",
+    "perPerson": "5500.00",
+    "image": "reef2.jpg",
+    "description": "Dawson's Creek – Explore the breathtaking glacial fjords and pristine wilderness of Juneau's Blue Lagoon. This package includes whale-watching cruises, kayaking through icebergs, and guided hikes through old-growth rainforest. Dawson's Creek is the ultimate Alaskan escape for nature enthusiasts."
+  },
+  {
+    "code": "BALI210521",
+    "name": "Bali Getaway",
+    "length": "5 nights / 6 days",
+    "start": "2021-05-21T00:00:00Z",
+    "resort": "Nusa Dua Beach Resort, Bali, Indonesia",
+    "perPerson": "3995.00",
+    "image": "reef3.jpg",
+    "description": "Bali Getaway – Immerse yourself in the spiritual culture and tropical beauty of Bali's legendary shores. The Bali Getaway package features temple tours, traditional Balinese cooking classes, rice terrace treks, and evenings on the stunning white sands of Nusa Dua. Your perfect tropical retreat awaits."
+  },
+  {
+    "code": "MALD210610",
+    "name": "Maldives Dream",
+    "length": "7 nights / 8 days",
+    "start": "2021-06-10T00:00:00Z",
+    "resort": "Overwater Villas, North Male Atoll, Maldives",
+    "perPerson": "7250.00",
+    "image": "reef1.jpg",
+    "description": "Maldives Dream – Experience the ultimate luxury overwater bungalow retreat in the heart of the Indian Ocean. Maldives Dream includes private butler service, sunset dolphin cruises, spa treatments, and exclusive snorkeling and diving in some of the world's most biodiverse coral reefs."
+  },
+  {
+    "code": "AMAL210720",
+    "name": "Amalfi Coast Escape",
+    "length": "6 nights / 7 days",
+    "start": "2021-07-20T00:00:00Z",
+    "resort": "Belmond Hotel Caruso, Ravello, Italy",
+    "perPerson": "6100.00",
+    "image": "reef2.jpg",
+    "description": "Amalfi Coast Escape – Wind along the cliffside villages of Italy's iconic Amalfi Coast aboard a private yacht. Amalfi Coast Escape includes visits to Positano, Ravello, and Capri, with farm-to-table dining, limoncello tastings, and swimming in the turquoise Tyrrhenian Sea at every stop."
+  },
+  {
+    "code": "SAFA210901",
+    "name": "Serengeti Safari",
+    "length": "8 nights / 9 days",
+    "start": "2021-09-01T00:00:00Z",
+    "resort": "Four Seasons Serengeti, Tanzania",
+    "perPerson": "9800.00",
+    "image": "reef3.jpg",
+    "description": "Serengeti Safari – Witness the world's greatest wildlife spectacle on the sweeping plains of Tanzania. Serengeti Safari takes you on daily game drives to see the Great Migration, with exclusive bush dinners under the stars, Maasai cultural experiences, and hot-air balloon rides over the savanna at sunrise."
+  }
 ]
