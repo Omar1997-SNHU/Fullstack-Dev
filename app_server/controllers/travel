@@ -1,11 +1,47 @@
-var fs = require('fs');
-var path = require('path');
+// API endpoint for trips
+const tripsEndpoint = 'http://localhost:3000/api/trips';
 
+// Options for the fetch call
+const options = {
+  method: 'GET',
+  headers: {
+    'Accept': 'application/json'
+  }
+};
+
+/* GET travel page
+ * Now fetches trips from the REST API instead of reading trips.json
+ * Previously:
+ * var fs = require('fs');
+ * var trips = JSON.parse(fs.readFileSync('./data/trips.json', 'utf8'));
+ */
 const travel = (req, res) => {
-    var trips = JSON.parse(fs.readFileSync(path.join(__dirname, '../../data/trips.json'), 'utf8'));
-    res.render('travel', { trips });
+  // console.log('travel controller called');
+  fetch(tripsEndpoint, options)
+    .then(res => res.json())
+    .then(json => {
+      // console.log(json);
+
+      // Error condition: response is not an array
+      if (!Array.isArray(json)) {
+        return res.status(500).render('error', {
+          message: 'Unexpected API response',
+          error: { status: 500, stack: '' }
+        });
+      }
+
+      // Error condition: array is empty - no trips in database
+      if (json.length === 0) {
+        return res.render('travel', {
+          title: 'Travlr Getaways',
+          trips: [],
+          message: 'No trips available. Please check back soon!'
+        });
+      }
+
+      res.render('travel', { title: 'Travlr Getaways', trips: json });
+    })
+    .catch(err => res.status(500).send(err.message));
 };
 
-module.exports = {
-    travel
-};
+module.exports = { travel };
