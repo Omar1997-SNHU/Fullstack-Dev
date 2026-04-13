@@ -3,7 +3,7 @@ var express     = require('express');
 var path        = require('path');
 var hbs         = require('hbs');
 
-// Connect to MongoDB via Mongoose (db moved to app_api/models)
+// Connect to MongoDB via Mongoose
 require('./app_api/models/db');
 
 // Routers
@@ -12,6 +12,14 @@ var travelRouter = require('./app_server/routes/travel');
 var apiRouter    = require('./app_api/routes/index');
 
 var app = express();
+
+// Enable CORS for Angular SPA — must be before routes
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', 'http://localhost:4200');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  next();
+});
 
 // View engine setup
 app.set('views', path.join(__dirname, 'app_server', 'views'));
