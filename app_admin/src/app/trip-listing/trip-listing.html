@@ -1,8 +1,16 @@
 <div class="row">
   <div class="col-12 mb-3">
-    <button class="btn btn-primary" (click)="addTrip()">Add Trip</button>
+    <div *ngIf="authService.isLoggedIn()">
+      <button class="btn btn-primary" (click)="addTrip()">
+        Add Trip
+      </button>
+    </div>
   </div>
   <div *ngFor="let trip of trips" class="col-md-4">
-    <app-trip-card [trip]="trip" class="card-deck mt-2"></app-trip-card>
+    <app-trip-card
+      [trip]="trip"
+      [isLoggedIn]="authService.isLoggedIn()"
+      class="card-deck mt-2">
+    </app-trip-card>
   </div>
 </div>

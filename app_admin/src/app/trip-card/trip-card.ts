@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
 })
 export class TripCardComponent implements OnInit {
   @Input('trip') trip: any;
+  @Input('isLoggedIn') isLoggedIn: boolean = false;
 
   constructor(private router: Router) {}
 

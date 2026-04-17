@@ -3,6 +3,7 @@ import { CommonModule, NgFor } from '@angular/common';
 import { Router } from '@angular/router';
 import { TripCardComponent } from '../trip-card/trip-card';
 import { TripDataService } from '../services/trip-data';
+import { AuthenticationService } from '../services/authentication';
 import { Trip } from '../models/trip';
 
 @Component({
@@ -20,7 +21,8 @@ export class TripListingComponent implements OnInit {
   constructor(
     private tripDataService: TripDataService,
     private router: Router,
-    private cdr: ChangeDetectorRef
+    private cdr: ChangeDetectorRef,
+    public authService: AuthenticationService
   ) {
     console.log('trip-listing constructor');
   }
