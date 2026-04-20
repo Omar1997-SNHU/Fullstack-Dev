@@ -49,7 +49,8 @@ export class EditTrip implements OnInit {
       .subscribe({
         next: (value: any) => {
           this.trip = value;
-          this.editForm.patchValue(value[0]);
+          const tripData = Array.isArray(value) ? value[0] : value;
+          this.editForm.patchValue(tripData);
           if (!value) {
             this.message = 'No Trip Retrieved!';
           } else {
